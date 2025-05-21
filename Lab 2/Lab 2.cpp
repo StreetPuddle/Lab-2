@@ -4,7 +4,7 @@
 
 int main(void)
 {
-	ALLEGRO_DISPLAY* Screen = NULL;
+	ALLEGRO_DISPLAY *Screen = NULL;
 
 	if (!al_init())
 	{
@@ -24,7 +24,7 @@ int main(void)
 	int pos_x = width / 2;
 	int pos_y = height / 2;
 
-	ALLEGRO_EVENT_QUEUE* event_queue = NULL;
+	ALLEGRO_EVENT_QUEUE *event_queue = NULL;
 	ALLEGRO_EVENT ev;
 
 	al_init_primitives_addon();
@@ -58,6 +58,22 @@ int main(void)
 				break;
 			case ALLEGRO_KEY_LEFT:
 				pos_x -= 10;
+				break;
+			case ALLEGRO_KEY_U:
+				pos_x -= 10;
+				pos_y -= 10;
+				break;
+			case ALLEGRO_KEY_D:
+				pos_x += 10;
+				pos_y += 10;
+				break;
+			case ALLEGRO_KEY_R:
+				pos_x += 10;
+				pos_y -= 10;
+				break;
+			case ALLEGRO_KEY_L:
+				pos_x -= 10;
+				pos_y += 10;
 				break;
 			}
 		}
