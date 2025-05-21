@@ -50,31 +50,31 @@ int main(void) {
 		{
 			switch (ev.keyboard.keycode)
 			{
-			case ALLEGRO_KEY_UP:
+			case ALLEGRO_KEY_UP://up
 				pos_y -= 10;
 				break;
-			case ALLEGRO_KEY_DOWN:
+			case ALLEGRO_KEY_DOWN://down
 				pos_y += 10;
 				break;
-			case ALLEGRO_KEY_RIGHT:
+			case ALLEGRO_KEY_RIGHT://right
 				pos_x += 10;
 				break;
-			case ALLEGRO_KEY_LEFT:
+			case ALLEGRO_KEY_LEFT://left
 				pos_x -= 10;
 				break;
-			case ALLEGRO_KEY_U:
+			case ALLEGRO_KEY_U://up left
 				pos_x -= 10;
 				pos_y -= 10;
 				break;
-			case ALLEGRO_KEY_D:
+			case ALLEGRO_KEY_D://down right
 				pos_x += 10;
 				pos_y += 10;
 				break;
-			case ALLEGRO_KEY_R:
+			case ALLEGRO_KEY_R://up right
 				pos_x += 10;
 				pos_y -= 10;
 				break;
-			case ALLEGRO_KEY_L:
+			case ALLEGRO_KEY_L://down left
 				pos_x -= 10;
 				pos_y += 10;
 				break;
